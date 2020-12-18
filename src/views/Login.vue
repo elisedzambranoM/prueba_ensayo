@@ -65,7 +65,7 @@ export default {
         .then(() => {
           this.user = "";
           this.password = "";
-          this.$router.push("/cursos");
+          this.$router.push("/");
         })
         .catch(() => {
           alert("Todos los campos son requeridos");
