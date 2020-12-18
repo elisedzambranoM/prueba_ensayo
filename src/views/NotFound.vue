@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col class="d-flex justify-center">
+    <v-row justify="center">
+      <v-col md="4">
         <v-img src="../assets/NotFoundImage.jpg" max-width="700"></v-img>
       </v-col>
     </v-row>

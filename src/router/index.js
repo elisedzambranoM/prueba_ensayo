@@ -2,6 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../views/Login.vue'
 import NotFound from '@/views/NotFound.vue'
+import Register from '@/views/Register.vue'
+import Cursos from '@/views/Cursos.vue'
+
 
 
 Vue.use(VueRouter)
@@ -11,6 +14,19 @@ const routes = [
     path: '/',
     name: 'login',
     component: Login
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: Register,
+  },
+  {
+    path: '/cursos',
+    name: 'Cursos',
+    component: Cursos,
+    meta: {
+      login: true,
+    },
   },
   {
     path: '*',
