@@ -30,7 +30,7 @@ const routes = [
     },
   },
   {
-    path: '/info/:banana',
+    path: '/info/:id',
     name: 'Info',
     component: Info,
     meta: {

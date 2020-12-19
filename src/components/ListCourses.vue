@@ -3,7 +3,7 @@
     <v-row>
       <v-col v-for="course in courses" :key="course.id">
         <card-courses
-          :id="course.data.id"
+          :id="course.id"
           :name="course.data.name"
           :image="course.data.img"
           :description="course.data.description"

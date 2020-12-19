@@ -8,14 +8,17 @@
             height="200px"
             src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
           >
-            <v-card-title>{{title}}</v-card-title>
+            <v-card-title>{{ title }}</v-card-title>
           </v-img>
           <v-card-subtitle class="pb-0">
-             {{id}}
+            <audio controls>
+              <source :src="mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
           </v-card-subtitle>
           <v-card-text class="text--primary">
             <div></div>
-            <div>{{description}}</div>
+            <div>{{ description }}</div>
           </v-card-text>
 
           <v-card-actions> </v-card-actions>
@@ -29,7 +32,7 @@
 export default {
   name: "cardExample",
 
-  props:["id", "title", "description"]
+  props: ["mp3", "title", "description"],
 };
 </script>
 

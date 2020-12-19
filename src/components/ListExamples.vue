@@ -1,11 +1,11 @@
 <template>
   <v-container>
     <v-row>
-      <v-col md="4" v-for="example in examples" :key="example.id">
+      <v-col md="4" v-for="example in ejemplos" :key="example.id">
         <card-example
-          :id="example.id"
-          :title="example.title"
-          :description="example.description"
+          :mp3="example.data.mp3"
+          :title="example.data.title"
+          :description="example.data.description"
         />
       </v-col>
     </v-row>
@@ -23,46 +23,11 @@ export default {
     CardExample,
   },
 
+  props: ['ejemplos'],
+
   data() {
     return {
-      examples: [
-        {
-          id: 1,
-          title: "Esto es un ejemplo de título de ejemplo",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis ea quidem enim? In laudantium dolorum eligendi perspiciatis, assumenda autem consectetur culpa error, consequatur numquam incidunt laboriosam nesciunt, nulla aliquam.",
-        },
-        {
-          id: 2,
-          title: "Esto es un ejemplo de título de ejemplo",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis ea quidem enim? In laudantium dolorum eligendi perspiciatis, assumenda autem consectetur culpa error, consequatur numquam incidunt laboriosam nesciunt, nulla aliquam.",
-        },
-        {
-          id: 3,
-          title: "Esto es un ejemplo de título de ejemplo",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis ea quidem enim? In laudantium dolorum eligendi perspiciatis, assumenda autem consectetur culpa error, consequatur numquam incidunt laboriosam nesciunt, nulla aliquam.",
-        },
-        {
-          id: 4,
-          title: "Esto es un ejemplo de título de ejemplo",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis ea quidem enim? In laudantium dolorum eligendi perspiciatis, assumenda autem consectetur culpa error, consequatur numquam incidunt laboriosam nesciunt, nulla aliquam.",
-        },
-        {
-          id: 5,
-          title: "Esto es un ejemplo de título de ejemplo",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis ea quidem enim? In laudantium dolorum eligendi perspiciatis, assumenda autem consectetur culpa error, consequatur numquam incidunt laboriosam nesciunt, nulla aliquam.",
-        },
-        {
-          id: 6,
-          title: "Esto es un ejemplo de título de ejemplo",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis ea quidem enim? In laudantium dolorum eligendi perspiciatis, assumenda autem consectetur culpa error, consequatur numquam incidunt laboriosam nesciunt, nulla aliquam.",
-        },
-      ],
+      examples: [],
     };
   },
 };
