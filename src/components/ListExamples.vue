@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="4" v-for="example in examples" :key="example.id">
+      <v-col md="4" v-for="example in examples" :key="example.id">
         <card-example
           :id="example.id"
           :title="example.title"

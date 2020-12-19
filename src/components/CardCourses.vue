@@ -18,7 +18,7 @@
               <strong>{{ name }}</strong>
             </div>
 
-            <div>Whitsunday Island, Whitsunday Islands</div>
+            <div>{{description}}</div>
           </v-card-text>
 
           <v-card-actions>
@@ -36,7 +36,7 @@
 export default {
   name: 'CardCourses',
 
-   props: ["id", "name", "image"],
+   props: ["id", "name", "image", "description"],
 
   methods: {
     goToDetails(name) {

@@ -23,7 +23,7 @@ export default {
 
   methods:{
     goBack(){
-      this.$router.push("/cursos")
+      this.$router.push("/")
     }
   }
 };
